@@ -134,12 +134,11 @@ html, body {
 	margin-right: 0px !important;
 	margin-bottom: 0px !important;
 	margin-top: 0px !important;
-	background: none;
-	background-color: rgba(0,0,0,0.5) !important;
-	border: none !important;
+	background: none !important;
+	background-color: rgba(150,150,200,0.3) !important;
+	-webkit-border-radius: 2px 8px 2px 8px;
 	border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
+	border: none !important;
 	color: white;
 	text-shadow: 1px 1px 1px black;
 	font-size: 2em !important;
@@ -181,7 +180,6 @@ html, body {
 	font-size: 1.3em;
 	transition: all 0.2s ease 0s;
 	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
 	-webkit-transition: all 0.2s ease 0s;
 	-ms-transition: all 0.2s ease 0s;
 }
@@ -402,15 +400,12 @@ textarea#input_big {
 	max-width: 725px;
 	border-radius: 0px 0px 5px 0px;
 	-webkit-border-radius: 0px 0px 5px 0px;
-	-webkit-border-radius: 0px 0px 5px 0px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-	background: linear-gradient(to bottom, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%);
-	background: -o-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%);
-	background: -webkit-linear-gradient(top, rgba(50,50,50,0.2) 0%, rgba(100,100,100,0.9) 100%);
-	background: -webkit-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%);
-	background: -ms-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%);
+	box-shadow: 5px 5px 5px rgba(150,150,200,0.4);
+	-webkit-box-shadow: 5px 5px 5px rgba(0,89,185,0.4);
+	background: linear-gradient(to bottom, rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
+	background: -o-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
 }
 textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {border: 1px solid black;}
 
