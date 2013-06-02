@@ -22,17 +22,10 @@
 
 /*Plurk dynamic logo*/
 /*目前為噗浪預設，如需自訂請拿掉註解*/
-/*
+
 #dynamic_logo, #logo {
-	background: url("");
-	background-size: 0px 0px;
-	width: 0px !important;
-	height:	0px !important;
-	position: fixed !important;
-	overflow: visible;
-	top: 0px !important;
-	left: 0px !important;
-}*/
+       opacity:0 !important;
+}
 
 /*-----頂置設定結束-----*/
 
@@ -57,7 +50,7 @@ html, body {
 	transition: all 0.2s ease 0s;
 	-o-transition: all 0.2s ease 0s;
 	-webkit-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
 	-ms-transition: all 0.2s ease 0s;
 }
 #top_login a:hover,
@@ -280,7 +273,6 @@ html, body {
 	border: none !important;
 	box-shadow: 1px 1px 3px black;
 	-webkit-box-shadow: 1px 1px 3px black;
-	-webkit-box-shadow: 1px 1px 3px black;
 }
 .plurk_cnt .name {/* 噗浪者姓名 */
 	font-size: 1.1em;
@@ -291,38 +283,34 @@ html, body {
 .new .plurk_cnt {/* 未讀噗浪 */
 	box-shadow: 0px 0px 5px #FB0047 !important;
 	-webkit-box-shadow: 0px 0px 5px #FB0047 !important;
-	-webkit-box-shadow: 0px 0px 5px #FB0047 !important;
-	opacity: 1 !important;
+	opacity: 0.9 !important;
 }
 .plurk .plurk_cnt {/*未開啟的噗*/
 	box-shadow: 0px 0px 3px black;
-	-webkit-box-shadow: 0px 0px 3px black;
 	-webkit-box-shadow: 0px 0px 3px black;
 	opacity: 0.6;
 	z-index: 825;
 	transition: all 0.2s ease 0s;
 	-o-transition: all 0.2s ease 0s;
 	-webkit-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
 	-ms-transition: all 0.2s ease 0s;
 }
 .plurk_cnt:hover {/*滑過的噗*/
 	box-shadow: 0px 0px 5px black;
 	-webkit-box-shadow: 0px 0px 5px black;
-	-webkit-box-shadow: 0px 0px 5px black;
-	opacity: 1;
+	opacity: 0.9;
 }
 .list .plurk_cnt .name {position: static !important;}
 .list {
-	border-left:5px solid rgba(0, 0, 0, 0.7) !important;
-	border-right:5px solid rgba(0, 0, 0, 0.7) !important;
+	border-left:3px solid rgba(0, 90, 255, 0.4) !important;
+	border-right:3px solid rgba(0, 90, 255, 0.4) !important;
 	border-top: none !important;
 	border-bottom: none !important;
 }
 .plurk_box .info_box,
 .plurk_box .caption {border: none !important;}
 .plurk_box .mini_form{
-	background:rgba(0, 0, 0, 0.7) !important;
+	background:rgba(0, 90, 255, 0.41) !important;
 	color:white !important;
 	border: none !important;
 	font-size: 16px;
@@ -331,7 +319,7 @@ html, body {
 .plurk_box .caption,
 .info_box {
 	color: #FFFFFF !important;
-	background-color: rgba(0,0,0,0.7) !important;
+	background-color: rgba(0, 90, 255, 0.7) !important;
 	font-weight: bold;
 }
 .info_box * {
@@ -343,7 +331,7 @@ html, body {
 	-webkit-box-shadow: none;
 	-webkit-box-shadow: none;
 	opacity: 1;
-	border:5px solid rgba(0, 0, 0, 0.7) !important;
+	border:3px solid rgba(0, 90, 255, 0.4) !important;
 	border-bottom: none !important;
 	padding-left: 15px !important;
 }
@@ -353,7 +341,6 @@ html, body {
 }
 .plurk {
 	box-shadow:none;
-	-webkit-box-shadow:none;
 	-webkit-box-shadow:none;
 }
 .response_time.plurk_cnt{/* 回文右邊的選項 */
