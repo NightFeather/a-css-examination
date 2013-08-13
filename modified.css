@@ -612,6 +612,7 @@ a.friend_man:hover{color:#111 !important;}
 #footer ul{
 	/*margin: 0px !important;*/
         position:fixed;
+        right: 10px !important;
 	margin-top: -115px !important;
         margin-right:0px !important;
 	padding-top: 20px !important;
