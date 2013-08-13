@@ -636,7 +636,9 @@ a.friend_man:hover{color:#111 !important;}
 }
 
 #languge_selector {
-        position:fixed;
+        position:fixed !important;
+        left:auto !important;
+        top:auto !important;
         max-width:300px !important;
 	margin: 0px !important;
 	margin-top: -115px !important;
