@@ -1,4 +1,5 @@
-rigin:https://github.com/tzulum/3Presto
+/*	CSS for www.plurk.com
+	Origin:https://github.com/tzulum/3Presto
 	Modified:https://github.com/nightfeather/a-css-examination
 	License:GNU General Public License
 	在Chrome上基本都會支援
@@ -28,7 +29,6 @@ rigin:https://github.com/tzulum/3Presto
 
 /*-----頂置設定結束-----*/
 
-html {overflow: hidden;}
 html, body {
 	width: 100%;
 	height: 100%;
@@ -159,7 +159,6 @@ html, body {
 	background: none !important;
 	background-color: rgba(150,150,200,0.3) !important;
 	-webkit-border-radius: 2px 8px 2px 8px;
-	-moz-border-radius: 2px 8px 2px 8px;
 	border-radius: 5px 5px 5px 5px;
 	border: none !important;
 	color: white;
@@ -198,7 +197,6 @@ html, body {
 	background: none !important;
 	background-color: rgba(150,150,200,0.3) !important;
 	-webkit-border-radius: 2px 8px 2px 8px;
-	-moz-border-radius: 2px 8px 2px 8px;
 	border-radius: 5px 5px 5px 5px;
 	border: none !important;
 	font-size: 1.3em;
@@ -241,7 +239,6 @@ html, body {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	-webkit-border-radius: 8px 2px 8px 2px;
-	-moz-border-radius: 8px 2px 8px 2px;
 	text-decoration: none;
 	font-weight: bold;
 	transition: background-color 0.2s ease 0s;
@@ -262,7 +259,7 @@ html, body {
 /*	background: linear-gradient(to bottom, #999999 0%,#EEEEEE 100%);
 	background: -o-linear-gradient(top, #999999 0%,#EEEEEE 100%);
 	background: -webkit-linear-gradient(top, #999999 0%, #EEEEEE 100%);
-	background: -moz-linear-gradient(top, #999999 0%,#EEEEEE 100%);
+	background: -webkit-linear-gradient(top, #999999 0%,#EEEEEE 100%);
 	background: -ms-linear-gradient(top, #999999 0%,#EEEEEE 100%);*/
 }
 
@@ -274,7 +271,6 @@ html, body {
 	border: none !important;
 	box-shadow: 1px 1px 3px black;
 	-webkit-box-shadow: 1px 1px 3px black;
-	-moz-box-shadow: 1px 1px 3px black;
 }
 .plurk_cnt .name {/* 噗浪者姓名 */
 	font-size: 1.1em;
@@ -285,25 +281,21 @@ html, body {
 .new .plurk_cnt {/* 未讀噗浪 */
 	box-shadow: 0px 0px 5px #FB0047 !important;
 	-webkit-box-shadow: 0px 0px 5px #FB0047 !important;
-	-moz-box-shadow: 0px 0px 5px #FB0047 !important;
 	opacity: 0.9 !important;
 }
 .plurk .plurk_cnt {/*未開啟的噗*/
 	box-shadow: 0px 0px 3px black;
 	-webkit-box-shadow: 0px 0px 3px black;
-	-moz-box-shadow: 0px 0px 3px black;
 	opacity: 0.6;
 	z-index: 825;
 	transition: all 0.2s ease 0s;
 	-o-transition: all 0.2s ease 0s;
 	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
 	-ms-transition: all 0.2s ease 0s;
 }
 .plurk_cnt:hover {/*滑過的噗*/
 	box-shadow: 0px 0px 5px black;
 	-webkit-box-shadow: 0px 0px 5px black;
-	-moz-box-shadow: 0px 0px 5px black;
 	opacity: 0.9;
 }
 .list .plurk_cnt .name {position: static !important;}
@@ -335,7 +327,7 @@ html, body {
 .plurk_box .plurk_cnt {
 	box-shadow: none;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
 	opacity: 1;
 	border:3px solid rgba(0, 90, 255, 0.4) !important;
 	border-bottom: none !important;
@@ -348,15 +340,14 @@ html, body {
 .plurk {
 	box-shadow:none;
 	-webkit-box-shadow:none;
-	-moz-box-shadow:none;
 }
-.response_time.plurk_cnt {/* 回文右邊的選項 */
+.response_time.plurk_cnt{/* 回文右邊的選項 */
 	background:rgba(150, 150, 200, 0.6) !important;
 	border: none !important;
 	transition: all 0.2s ease 0s;
 	-o-transition: all 0.2s ease 0s;
 	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
 	-ms-transition: all 0.2s ease 0s;
 }
 .response_time .holder{background:none;}
@@ -384,7 +375,10 @@ html, body {
 
 /* 發文訊息面板 */
 textarea {
-       border-top-left-radius: 8px 2px; 
+       border-top-left-radius: 8px; 
+       border-top-right-radius: 2px;
+       border-bottom-right-radius: 8px;
+       border-bottom-left-radius: 2px;
        transition: all 0.30s ease-in-out;
        outline: none;
        padding: 3px 0px 3px 3px;
@@ -394,7 +388,6 @@ textarea {
 
 textarea:focus {
   -webkit-box-shadow: inset -2px -2px 4px 0px rgba(150, 150, 200, 0.9);
-  -moz-box-shadow: inset -2px -2px 4px 0px rgba(150, 150, 200, 0.9);
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
   border: 1px solid rgba(238, 83, 81, 0.7);
@@ -428,10 +421,8 @@ textarea:focus {
 	max-width: 725px;
 	border-radius: 0px 0px 5px 0px;
 	-webkit-border-radius: 0px 0px 5px 0px;
-	-moz-border-radius: 0px 0px 5px 0px;
 	box-shadow: 5px 5px 5px rgba(150,150,200,0.4);
 	-webkit-box-shadow: 5px 5px 5px rgba(0,89,185,0.4);
-	-moz-box-shadow: 5px 5px 5px rgba(0,89,185,0.4);
 	background: linear-gradient(to bottom, rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
 	background: -o-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
 	background: -webkit-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
@@ -498,14 +489,13 @@ div#plurk-dashboard{
 	-moz-transition: all 0.2s ease 0s;
 	-ms-transition: all 0.2s ease 0s;
 }
-div#plurk-dashboard:hover {
+div#plurk-dashboard:hover{
 	background:rgba(0,89,185,0.4) !important;
 	width:250px !important;
 	overflow:hidden !important;
 	color: #FFFFFF !important;
 	z-index:1000;
 	-webkit-box-shadow: 5px 0px 5px rgba(0,100,185,0.3);
-	-moz-box-shadow: 5px 0px 5px rgba(0,100,185,0.3);
 	box-shadow: 5px 0px 5px rgba(0,90,185,0.4);
 }
 .dash-segment{
@@ -514,17 +504,17 @@ div#plurk-dashboard:hover {
 	height:auto !important;
 }
 .dash-segment h2,
-.dash-segment a {
+.dash-segment a{
 	color: #AAAAAA !important;
 	font-weight: bold !important;
 	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
 	-ms-transition: all 0.2s ease 0s;
 	-o-transition: all 0.2s ease 0s;
 	transition: all 0.2s ease 0s;
 }
 .dash-segment h2:hover,
-.dash-segment a:hover {
+.dash-segment a:hover{
 	color: #CECECE !important;
 	text-shadow: 0px 0px 1px #EEEEEE;
 }
@@ -539,14 +529,14 @@ p#about_me, #dash-stats, #dash-friends, #dash-fans{
 	padding: 5px;
 	border-radius:5px;
 	-webkit-border-radius: 5px;
-	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 	transition:max-height 0.5s ease-in;
 	-o-transition:max-height 0.5s ease-in;
 	-webkit-transition:max-height 0.5s ease-in;
-	-moz-transition:max-height 0.5s ease-in;
+	-webkit-transition:max-height 0.5s ease-in;
 	-ms-transition:max-height 0.5s ease-in;
 }
-p#about_me:hover, #dash-stats:hover, #dash-friends:hover, #dash-fans:hover {
+p#about_me:hover, #dash-stats:hover, #dash-friends:hover, #dash-fans:hover{
 	max-height:300px !important;
 	background:rgba(0,0,0,0.5) !important;
 }
@@ -554,27 +544,27 @@ p#about_me:hover, #dash-stats:hover, #dash-friends:hover, #dash-fans:hover {
 	padding-top:5px !important;
 	padding-bottom:5px !important;
 }
-#dash-profile {margin-top:10px;}
+#dash-profile{margin-top:10px;}
 .profile-pic {
 	height: 100px;
 	width: 100px;
 }
-.show_all_friends {
+.show_all_friends{
 	text-align:center;
 	font-size:11px !important;
 }
-#dash-stats h3 {margin-top:0px !important;}
-#karma {
+#dash-stats h3{margin-top:0px !important;}
+#karma{
 	font-size:30px !important;
 	color: #fff !important;
 	text-shadow: rgba(255,222,0,0.8) 0px 0px 5px !important;
 }
-.award_bar {
+.award_bar{
 	width:200px !important;
 	padding:0 !important;
 	margin-top: 0px !important;
 }
-.award_bar div {
+.award_bar div{
 	padding:0 !important;
 	margin:0 !important;
 }
@@ -597,7 +587,7 @@ p#about_me:hover, #dash-stats:hover, #dash-friends:hover, #dash-fans:hover {
 	margin:0px !important;
 }
 .friend_holder .user_link,
-.friend_holder .user_link:hover {padding:0px !important;}
+.friend_holder .user_link:hover{padding:0px !important;}
 #private_plurk, 
 #friend_managment,
 #fan_managment{
@@ -610,7 +600,7 @@ a.friend_man{
 	font-size:11px !important;
 	background-color:black!important;
 }
-a.friend_man:hover {color:#111 !important;}
+a.friend_man:hover{color:#111 !important;}
 
 /*頁腳*/
 #footer{
@@ -621,6 +611,7 @@ a.friend_man:hover {color:#111 !important;}
 
 #footer ul{
 	/*margin: 0px !important;*/
+        position:fixed;
 	margin-top: -115px !important;
         margin-right:0px !important;
 	padding-top: 20px !important;
@@ -636,7 +627,7 @@ a.friend_man:hover {color:#111 !important;}
 	-ms-transition: all 0.2s ease 0s;
 }
 
-#footer ul:hover {
+#footer ul:hover{
         max-width: 640px !important;
         font-size: 14.5px !important;
 	background-color: rgba(20,100,255,0.8);
@@ -644,6 +635,7 @@ a.friend_man:hover {color:#111 !important;}
 }
 
 #languge_selector {
+        position:fixed;
         max-width:300px !important;
 	margin: 0px !important;
 	margin-top: -115px !important;
@@ -659,7 +651,7 @@ a.friend_man:hover {color:#111 !important;}
 }
 
 
-#languge_selector:hover {
+#languge_selector:hover{
         margin-top: -160px !important;
         font-size: 15px;
 	background-color: rgba(20,100,255,0.8);
@@ -700,17 +692,15 @@ a.friend_man:hover {color:#111 !important;}
 	background: rgba(0, 153, 255, .7);
 	box-shadow: 0px 0px 9px rgba(0, 153, 255, .66);
 	-webkit-box-shadow: 0px 0px 9px rgba(0, 153, 255, .66);
-	-moz-box-shadow: 0px 0px 9px rgba(0, 153, 255, .66);
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	z-index:  2048;
 }
 .GB_Window .iframe_holder,
 .GB_Window iframe {
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;      
+	-webkit-border-radius: 5px;      
 	background: none;
 	border: none;
 }
@@ -744,7 +734,7 @@ div.bigplurk div.time {
 	-webkit-border-radius:5px;
 	box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
-	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
 }
 article.bigplurk.cboxAnchor {
 	position: relative !important;
@@ -763,12 +753,12 @@ article.bigplurk.cboxAnchor {
 	-webkit-border-radius: 5px;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
-	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
 }
 #plurk_nav a:hover {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
 #plurker_info,
 #plurk_responses {
@@ -787,7 +777,7 @@ article.bigplurk.cboxAnchor {
 	padding: 0px !important;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
 #plurk_responses,
 #plurk_responses .feed-link a {
@@ -800,7 +790,7 @@ article.bigplurk.cboxAnchor {
 	border: none !important;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
 #reply #reply_box .qual_holder {
 	color: #EEEEEE !important;
@@ -834,4 +824,3 @@ article.bigplurk.cboxAnchor {
 	opacity: 0 !important;
 	overflow: hidden !important; 
 }
-
