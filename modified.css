@@ -499,9 +499,10 @@ div#plurk-dashboard:hover{
 	box-shadow: 5px 0px 5px rgba(0,90,185,0.4);
 }
 .dash-segment{
-	width:250px;
+	width:100% !important;
 	min-height:10px !important;
 	height:auto !important;
+	clear:both;
 }
 .dash-segment h2,
 .dash-segment a{
