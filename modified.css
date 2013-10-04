@@ -149,6 +149,12 @@ html, body {
     font-size: 2em !important;
     font-weight: bold;
 }
+
+#time_show {
+        border-radius: 50% 50%;
+        text-align:center;
+}
+
 #time_show span {
     color: white !important;
 }
