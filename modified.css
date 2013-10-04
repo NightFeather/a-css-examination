@@ -1,98 +1,88 @@
-/*	CSS for www.plurk.com
-	Origin:https://github.com/tzulum/3Presto
-	Modified:https://github.com/nightfeather/a-css-examination
-	License:GNU General Public License
-	在Chrome上基本都會支援
+ /*	CSS for www.plurk.com
+    Origin:https://github.com/tzulum/3Presto
+    Modified:https://github.com/nightfeather/a-css-examination
+    License:GNU General Public License
+    在 Chrome 上基本都會支援
 */
-
-/*實驗性設定 - 讓捲動軸消失*/
-
+/* 實驗性設定 - 讓捲動軸消失 */
 ::-webkit-scrollbar {
        width: 0px !important;
 }
-
-/*-----頂置設定-----*/
+/*----- 頂置設定 -----*/
 /*background-image(自訂背景)*/
 #timeline_fg,
 #timeline_bg {
 /*    background-image:  url("http://i.imgur.com/bKoFCW6.jpg"); */
-	background-repeat: no-repeat; /*重複背景*/
-	background-position: right bottom; /*背景位置*/
+    background-repeat: no-repeat; /* 重複背景 */
+    background-position: right bottom; /* 背景位置 */
 }
-
 /*Plurk dynamic logo*/
-/*目前為噗浪預設，如需自訂請拿掉註解*/
-
+/* 目前為噗浪預設，如需自訂請拿掉註解 */
 #dynamic_logo, #logo {
        opacity:0 !important;
 }
-
-/*-----頂置設定結束-----*/
-
+/*----- 頂置設定結束 -----*/
 html, body {
-	width: 100%;
-	height: 100%;
-	min-width: 650px; 
-	min-height: 650px; 
-	font-family: "LiHei Pro", "文泉驛微米黑", "微軟正黑體", Arial, Helvetica, sans-serif;
-        background-image:  url("http://i.imgur.com/bKoFCW6.jpg"); 
+    width: 100%;
+    height: 100%;
+    min-width: 650px;
+    min-height: 650px;
+    font-family: "LiHei Pro", " 文泉驛微米黑 ", " 微軟正黑體 ", Arial, Helvetica, sans-serif;
+        background-image:  url("http://i.imgur.com/bKoFCW6.jpg");
         background-position: 35% 45%;
 }
-
-/* 導覽列*/
+/* 導覽列 */
 #alert_beacon,
 #top_login a,
 #top_bar a {
-	color: #aaaaaa !important;
-	font-family: "LiHei Pro", "文泉驛微米黑", "微軟正黑體", Arial, Helvetica, sans-serif !important;
-	text-shadow: 1px 1px 1px #777777;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
+    color: #aaaaaa !important;
+    font-family: "LiHei Pro", " 文泉驛微米黑 ", " 微軟正黑體 ", Arial, Helvetica, sans-serif !important;
+    text-shadow: 1px 1px 1px #777777;
+    transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
 }
 #top_login a:hover,
 #top_bar a:hover {color: #dddddd !important;}
-
 /* 標題 */
 #page_title {
-	color: white !important;
-	text-shadow: 1px 1px 1px black;
-	overflow:visible;
-	z-index: 1 !important;
-	font-size: 1.6em !important;
-	padding-top: 15px !important;
+    color: white !important;
+    text-shadow: 1px 1px 1px black;
+    overflow:visible;
+    z-index: 1 !important;
+    font-size: 1.6em !important;
+    padding-top: 15px !important;
 }
-
 /* 河道 */
 #timeline_holder {
-	margin-top: 60px !important;
-	height: 99% !important;
-	min-height: 540px; 
+    margin-top: 60px !important;
+    height: 99% !important;
+    min-height: 540px;
         background: rgba(0,0,0,0);
 /*	background-image: none;
-	background: #EEEEEE;
-	background: linear-gradient(to bottom, #EEEEEE 70%,#AAAAAA 100%);
-	background: -o-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%);
-	background: -webkit-linear-gradient(top, #EEEEEE 70%, #AAAAAA 100%);
-	background: -webkit-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%);
-	background: -ms-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%);
-	box-shadow: 0px 0px 20px #000000;
-	-webkit-box-shadow: 0px 0px 20px #000000;*/
-	border-top: 0px solid rgba(0,0,30,0.1) !important;
-	border-bottom: 2px solid rgba(0,0,30,0.1) !important;
+    background: #EEEEEE;
+    background: linear-gradient(to bottom, #EEEEEE 70%,#AAAAAA 100%);
+    background: -o-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%);
+    background: -webkit-linear-gradient(top, #EEEEEE 70%, #AAAAAA 100%);
+    background: -webkit-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%);
+    background: -ms-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%);
+    box-shadow: 0px 0px 20px #000000;
+    -webkit-box-shadow: 0px 0px 20px #000000;*/
+    border-top: 0px solid rgba(0,0,30,0.1) !important;
+    border-bottom: 2px solid rgba(0,0,30,0.1) !important;
 }
 #timeline_bg,
 #timeline_fg {
-	height: 85% !important;
-	min-height: 540px; 
+    height: 85% !important;
+    min-height: 540px;
 }
 #timeline_cnt {
-	top: 10% !important;
-	height: 70% !important;
-	padding-top: 2% !important;
-	z-index: 500 !important;
+    top: 10% !important;
+    height: 70% !important;
+    padding-top: 2% !important;
+    z-index: 500 !important;
 }
 .block_bg,
 .block_cnt,
@@ -100,282 +90,269 @@ html, body {
 .div_one_line {height: 100% !important;}
 .small_timeline,
 .small_timeline #timeline_holder {
-	height: 90% !important;
-	min-height: 600px; 
+    height: 90% !important;
+    min-height: 600px;
 }
-
-/*回噗介面*/
-
+/* 回噗介面 */
 .plurk_box .input_holder {
         width: 100%;
         margin: 3px 0px 0px 0px;
         padding: 18px 0px 0px 0px;
 }
-
 .timeline textarea#input_small {
         height: 1.8em;
         margin-left: -110px;
         width: 416px !important;
 }
-
 .icons_holder_row td,
 .icons_holder_row {
         margin-left: -100px !important;
 }
-
 .mini_form .char_updater {
         font-size: 10px;
         line-height: 1.3;
         margin-top: -19px;
         margin-left: -30px;
 }
-
-/*時間列*/
+/* 時間列 */
 #bottom_line {
-	top: 82px !important;
-	z-index: 100;
-	background: none;
-	border: none !important;
+    top: 82px !important;
+    z-index: 100;
+    background: none;
+    border: none !important;
 }
 .div_bottom * {
-	color: black !important;
-	z-index: 800;
+    color: black !important;
+    z-index: 800;
 }
 .day_start .bottom_start {
-	color: black !important;
-	text-shadow:0px 0px 5px #ffffff !important;
+    color: black !important;
+    text-shadow:0px 0px 5px #ffffff !important;
 }
-
 /* 浮動發噗時間 */
-.evening, .night, .day, .morning {
-	top: 90% !important;
-	width: 250px !important;
-	left: 50% !important;
-	padding: 10px !important;
-	margin-left: -125px !important;
-	margin-right: 0px !important;
-	margin-bottom: 0px !important;
-	margin-top: 0px !important;
-	background: none !important;
-	background-color: rgba(150,150,200,0.3) !important;
-	-webkit-border-radius: 2px 8px 2px 8px;
-	border-radius: 5px 5px 5px 5px;
-	border: none !important;
-	color: white;
-	text-shadow: 1px 1px 1px black;
-	font-size: 2em !important;
-	font-weight: bold;
+.evening.show, .night.show, .day.show, .morning.show {
+    top: 90% !important;
+    width: 250px !important;
+    left: 50% !important;
+    padding: 10px !important;
+    margin-left: -125px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    background: none !important;
+    background-color: rgba(150,150,200,0.3) !important;
+    -webkit-border-radius: 2px 8px 2px 8px;
+    border-radius: 5px 5px 5px 5px;
+    border: none !important;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2em !important;
+    font-weight: bold;
 }
 #time_show span {
-	color: white !important;
+    color: white !important;
 }
-
-/*換日線*/
+/* 換日線 */
 .day_bg {height: 98% !important;}
 .day_bg .div_inner {
-	background: none !important;
-	width: 15px !important;
-	border: none !important;
-	border-left: 1px solid rgba(255,255,255,0.2) !important;
-	border-right: 1px solid rgba(50,50,50,0.2) !important;
+    background: none !important;
+    width: 15px !important;
+    border: none !important;
+    border-left: 1px solid rgba(255,255,255,0.2) !important;
+    border-right: 1px solid rgba(50,50,50,0.2) !important;
 }
-
-/*新訊息更新&背景播放器*/
+/* 新訊息更新 & 背景播放器 */
 #updater *,
 #music_player * {
-	color: #555599 !important;
-	background: none !important;
-	text-decoration: none !important;
-	text-shadow: 1px 1px 3px #6666ee;
+    color: #555599 !important;
+    background: none !important;
+    text-decoration: none !important;
+    text-shadow: 1px 1px 3px #6666ee;
 }
 #updater,
 #music_player {
-	min-width: 150px !important;
-	top: 90% !important;
-	padding: 5px 5px 5px 5px !important;
-	margin: 0px 0px 0px 50px !important;
-	background: none !important;
-	background-color: rgba(150,150,200,0.3) !important;
-	-webkit-border-radius: 2px 8px 2px 8px;
-	border-radius: 5px 5px 5px 5px;
-	border: none !important;
-	font-size: 1.3em;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
+    min-width: 150px !important;
+    top: 90% !important;
+    padding: 5px 5px 5px 5px !important;
+    margin: 0px 0px 0px 50px !important;
+    background: none !important;
+    background-color: rgba(150,150,200,0.3) !important;
+    -webkit-border-radius: 2px 8px 2px 8px;
+    border-radius: 5px 5px 5px 5px;
+    border: none !important;
+    font-size: 1.3em;
+    transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
 }
 #updater:hover,
 #music_player:hover {background-color: rgba(100,100,150,0.7) !important;}
 #updater b { font-size: 1.6em;}
 #update_sepa {
-	width: 0px !important;
-	padding: 0px;
-	margin: 0px 5px;
-	border-left: 0px solid rgba(255,255,255,0.5) !important;
-	border-right: 0px solid rgba(200,200,200,0.5) !important;
+    width: 0px !important;
+    padding: 0px;
+    margin: 0px 5px;
+    border-left: 0px solid rgba(255,255,255,0.5) !important;
+    border-right: 0px solid rgba(200,200,200,0.5) !important;
 }
-
 /* 向左向右回到最前按鈕 */
 .browse_button {top: 80%;}
-
-/*分類按鈕*/
+/* 分類按鈕 */
 #filter_tab {
-	position: absolute !important;
-	top: 60px !important;
-	right: 0% !important;
-	margin: 0 !important;
-	line-height: 17px !important;
-	z-index: 500 !important;
+    position: absolute !important;
+    top: 60px !important;
+    right: 0% !important;
+    margin: 0 !important;
+    line-height: 17px !important;
+    z-index: 500 !important;
 }
-
 #filter_tab a.off_tab,
 #filter_tab a.off_tab:hover,
 #filter_tab a.filter_selected {
-	color: #eeeeee !important;
-	border: 0px solid #444444 !important;
-	border-bottom: none !important;
-	background: rgba(30,30,30,0.4);
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	-webkit-border-radius: 8px 2px 8px 2px;
-	text-decoration: none;
-	font-weight: bold;
-	transition: background-color 0.2s ease 0s;
-	-o-transition: background-color 0.2s ease 0s;
-	-webkit-transition: background-color 0.2s ease 0s;
-	-moz-transition: background-color 0.2s ease 0s;
-	-ms-transition: background-color 0.2s ease 0s;
-	transition: color 0.2s ease 0.2s;
-	-o-transition: color 0.2s ease 0.2s;
-	-webkit-transition: color 0.2s ease 0.2s;
-	-moz-transition: color 0.2s ease 0.2s;
-	-ms-transition: color 0.2s ease 0.2s;
+    color: #eeeeee !important;
+    border: 0px solid #444444 !important;
+    border-bottom: none !important;
+    background: rgba(30,30,30,0.4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-radius: 8px 2px 8px 2px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease 0s;
+    -o-transition: background-color 0.2s ease 0s;
+    -webkit-transition: background-color 0.2s ease 0s;
+    -moz-transition: background-color 0.2s ease 0s;
+    -ms-transition: background-color 0.2s ease 0s;
+    transition: color 0.2s ease 0.2s;
+    -o-transition: color 0.2s ease 0.2s;
+    -webkit-transition: color 0.2s ease 0.2s;
+    -moz-transition: color 0.2s ease 0.2s;
+    -ms-transition: color 0.2s ease 0.2s;
 }
 #filter_tab a.off_tab:hover,
 #filter_tab a.filter_selected {
-	background: rgba(0, 153, 255, .86);
-	color: black !important;
+    background: rgba(0, 153, 255, .86);
+    color: black !important;
 /*	background: linear-gradient(to bottom, #999999 0%,#EEEEEE 100%);
-	background: -o-linear-gradient(top, #999999 0%,#EEEEEE 100%);
-	background: -webkit-linear-gradient(top, #999999 0%, #EEEEEE 100%);
-	background: -webkit-linear-gradient(top, #999999 0%,#EEEEEE 100%);
-	background: -ms-linear-gradient(top, #999999 0%,#EEEEEE 100%);*/
+    background: -o-linear-gradient(top, #999999 0%,#EEEEEE 100%);
+    background: -webkit-linear-gradient(top, #999999 0%, #EEEEEE 100%);
+    background: -webkit-linear-gradient(top, #999999 0%,#EEEEEE 100%);
+    background: -ms-linear-gradient(top, #999999 0%,#EEEEEE 100%);*/
 }
-
-/*噗文*/
+/* 噗文 */
 .p_img {
-	position: relative !important;
-	left: 20px;
-	z-index: 850;
-	border: none !important;
-	box-shadow: 1px 1px 3px black;
-	-webkit-box-shadow: 1px 1px 3px black;
+    position: relative !important;
+    left: 20px;
+    z-index: 850;
+    border: none !important;
+    box-shadow: 1px 1px 3px black;
+    -webkit-box-shadow: 1px 1px 3px black;
 }
 .plurk_cnt .name {/* 噗浪者姓名 */
-	font-size: 1.1em;
-	z-index: 855;
-	text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+    font-size: 1.1em;
+    z-index: 855;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 }
 .block_cnt .plurk_cnt {padding-left: 20px !important;}
 .new .plurk_cnt {/* 未讀噗浪 */
-	box-shadow: 0px 0px 5px #FB0047 !important;
-	-webkit-box-shadow: 0px 0px 5px #FB0047 !important;
-	opacity: 0.9 !important;
+    box-shadow: 0px 0px 5px #FB0047 !important;
+    -webkit-box-shadow: 0px 0px 5px #FB0047 !important;
+    opacity: 0.9 !important;
 }
-.plurk .plurk_cnt {/*未開啟的噗*/
-	box-shadow: 0px 0px 3px black;
-	-webkit-box-shadow: 0px 0px 3px black;
-	opacity: 0.6;
-	z-index: 825;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
+.plurk .plurk_cnt {/* 未開啟的噗 */
+    box-shadow: 0px 0px 3px black;
+    -webkit-box-shadow: 0px 0px 3px black;
+        border-radius: 10% 20%;
+    opacity: 0.6;
+    z-index: 825;
+    transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
 }
-.plurk_cnt:hover {/*滑過的噗*/
-	box-shadow: 0px 0px 5px black;
-	-webkit-box-shadow: 0px 0px 5px black;
-	opacity: 0.9;
+.plurk_cnt:hover {/* 滑過的噗 */
+    box-shadow: 0px 0px 5px black;
+    -webkit-box-shadow: 0px 0px 5px black;
+    opacity: 0.9;
 }
 .list .plurk_cnt .name {position: static !important;}
 .list {
-	border-left:3px solid rgba(0, 90, 255, 0.4) !important;
-	border-right:3px solid rgba(0, 90, 255, 0.4) !important;
-	border-top: none !important;
-	border-bottom: none !important;
+    border-left:3px solid rgba(0, 90, 255, 0.4) !important;
+    border-right:3px solid rgba(0, 90, 255, 0.4) !important;
+    border-top: none !important;
+    border-bottom: none !important;
 }
 .plurk_box .info_box,
 .plurk_box .caption {border: none !important;}
 .plurk_box .mini_form{
-	background:rgba(0, 90, 255, 0.41) !important;
-	color:white !important;
-	border: none !important;
-	font-size: 16px;
+    background:rgba(0, 90, 255, 0.41) !important;
+    color:white !important;
+    border: none !important;
+    font-size: 16px;
 }
 .plurk_box .mini_form span{	color:white !important;}
 .plurk_box .caption,
 .info_box {
-	color: #FFFFFF !important;
-	background-color: rgba(0, 90, 255, 0.7) !important;
-	font-weight: bold;
+    color: #FFFFFF !important;
+    background-color: rgba(0, 90, 255, 0.7) !important;
+    font-weight: bold;
 }
 .info_box * {
-	color: #FFFFFF !important;
-	font-weight: bold;
+    color: #FFFFFF !important;
+    font-weight: bold;
 }
 .plurk_box .plurk_cnt {
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	-webkit-box-shadow: none;
-	opacity: 1;
-	border:3px solid rgba(0, 90, 255, 0.4) !important;
-	border-bottom: none !important;
-	padding-left: 15px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -webkit-box-shadow: none;
+    opacity: 1;
+    border:3px solid rgba(0, 90, 255, 0.4) !important;
+    border-bottom: none !important;
+    padding-left: 15px !important;
 }
 .list .plurk_cnt{
-	padding: 0 !important;
-	border: none !important;
+    padding: 0 !important;
+    border: none !important;
 }
 .plurk {
-	box-shadow:none;
-	-webkit-box-shadow:none;
+    box-shadow:none;
+    -webkit-box-shadow:none;
 }
 .response_time.plurk_cnt{/* 回文右邊的選項 */
-	background:rgba(150, 150, 200, 0.6) !important;
-	border: none !important;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
+    background:rgba(150, 150, 200, 0.6) !important;
+    border: none !important;
+    transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
 }
 .response_time .holder{background:none;}
 .response_time .holder p,
 .response_time .holder a{
-	color:white !important;
-	text-shadow: 0px 0px 1px black;
+    color:white !important;
+    text-shadow: 0px 0px 1px black;
 }
 .response_count {/* 回應數 */
-	border: none !important;
-	background: none !important;
-	color: #FFFFFF !important;
-	position: relative !important;
-	top: -5px;
-	left: -10px;
-	text-shadow: 0px 0px 5px black;
-	font-size: 2em;
+    border: none !important;
+    background: none !important;
+    color: #FFFFFF !important;
+    position: relative !important;
+    top: -5px;
+    left: -10px;
+    text-shadow: 0px 0px 5px black;
+    font-size: 2em;
 }
 .new .response_count { text-shadow: 0px 0px 5px #FF0000 !important;}
 .plurk_icon {z-index: 860;}
-.bday {/*小蛋糕移位*/
-	top: -10px !important;
-	left: 10px !important;
+.bday {/* 小蛋糕移位 */
+    top: -10px !important;
+    left: 10px !important;
 }
-
 /* 發文訊息面板 */
 textarea {
-       border-top-left-radius: 8px; 
+       border-top-left-radius: 8px;
        border-top-right-radius: 2px;
        border-bottom-right-radius: 8px;
        border-bottom-left-radius: 2px;
@@ -385,424 +362,409 @@ textarea {
        margin: 5px 1px 3px 0px;
        border: 1px solid #DDDDDD;
 }
-
 textarea:focus {
   -webkit-box-shadow: inset -2px -2px 4px 0px rgba(150, 150, 200, 0.9);
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
   border: 1px solid rgba(238, 83, 81, 0.7);
 }
-
 .plurkaction.pane textarea {max-height: 380px !important;}
 .plurkaction.pane * {
-	color: white;
-	text-shadow: 1px 1px 1px black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 .plurkaction.pane {
-	position: fixed !important;
-	top: 24px !important;
-	left: 0px !important;
-	z-index: 910 !important;
-	overflow: hidden !important;
-	border: none !important;
-	max-height: 40px;
-	max-width: 35%;
-	min-width: 450px;
-	background: none;
-	color:black;
-	transition: all 0.5s ease-out 0s;
-	-o-transition: all 0.5s ease-out 0s;
-	-webkit-transition: all 0.5s ease-out 0s;
-	-moz-transition: all 0.5s ease-out 0s;
-	-ms-transition: all 0.5s ease-out 0s;
+    position: fixed !important;
+    top: 24px !important;
+    left: 0px !important;
+    z-index: 910 !important;
+    overflow: hidden !important;
+    border: none !important;
+    max-height: 40px;
+    max-width: 35%;
+    min-width: 450px;
+    background: none;
+    color:black;
+    transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
 }
 .plurkaction.pane:hover {
-	max-height: 600px !important;
-	max-width: 725px;
-	border-radius: 0px 0px 5px 0px;
-	-webkit-border-radius: 0px 0px 5px 0px;
-	box-shadow: 5px 5px 5px rgba(150,150,200,0.4);
-	-webkit-box-shadow: 5px 5px 5px rgba(0,89,185,0.4);
-	background: linear-gradient(to bottom, rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
-	background: -o-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
-	background: -webkit-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
+    max-height: 600px !important;
+    max-width: 725px;
+    border-radius: 0px 0px 5px 0px;
+    -webkit-border-radius: 0px 0px 5px 0px;
+    box-shadow: 5px 5px 5px rgba(150,150,200,0.4);
+    -webkit-box-shadow: 5px 5px 5px rgba(0,89,185,0.4);
+    background: linear-gradient(to bottom, rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
+    background: -o-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,89,185,0.2) 0%,rgba(0,100,185,0.8) 100%);
 }
 textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {border: 1px solid black;}
-
 /* 傳送私噗 */
 #more_options_link {
-	background-image: none;
-	background-color: rgba(200,200,200,0);
-	color: black !important;
-	border: none !important;
+    background-image: none;
+    background-color: rgba(200,200,200,0);
+    color: black !important;
+    border: none !important;
 }
 #more_options #more_options_holder {
-	background-image: none;
-	background-color: rgba(0,0,0,0.5);
-	color: black;
+    background-image: none;
+    background-color: rgba(0,0,0,0.5);
+    color: black;
 }
 #more_options #more_options_holder .advert {
-	height: 0px !important;
-	width: 0px !important;
-	overflow: hidden;
+    height: 0px !important;
+    width: 0px !important;
+    overflow: hidden;
 }
 .qual_menu:not(.mini_menu) {top: 20px !important;}
 .plurkaction.pane textarea,
 #auto_ta_holder *,
 #more_options select ,#more_options select * {
-	text-shadow: none;
-	color: black !important;
+    text-shadow: none;
+    color: black !important;
 }
 #plurk_form {padding: 0 !important;}
-
-/*個人資料*/
+/* 個人資料 */
 .karma_tooltip {
-	position: fixed	!important;
-	top: 390px !important;
-	left: 215px !important;
+    position: fixed	!important;
+    top: 390px !important;
+    left: 215px !important;
 }
 #dashboard_holder{
-	text-align:left !important;
-	width:100%;
+    text-align:left !important;
+    width:100%;
 }
 div#plurk-dashboard{
-	width:125px !important;
-	height:78.5% !important;
-	min-height: 541px; 
-	overflow:hidden !important;
-	position:fixed !important;
-	z-index:604;
-	top:80px;
-	left:0px;
-	background:rgba(255,255,255,0.3) !important;
-	margin: 0 !important;
-	padding: 0 !important;
-	border: none !important;
-	color: black !important;
-	-webkit-box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
-	-moz-box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
-	box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
+    width:125px !important;
+    height:78.5% !important;
+    min-height: 541px;
+    overflow:hidden !important;
+    position:fixed !important;
+    z-index:604;
+    top:80px;
+    left:0px;
+    background:rgba(255,255,255,0.3) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    color: black !important;
+    -webkit-box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
+    -moz-box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
+    box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
+    transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
 }
 div#plurk-dashboard:hover{
-	background:rgba(0,89,185,0.4) !important;
-	width:250px !important;
-	overflow:hidden !important;
-	color: #FFFFFF !important;
-	z-index:1000;
-	-webkit-box-shadow: 5px 0px 5px rgba(0,100,185,0.3);
-	box-shadow: 5px 0px 5px rgba(0,90,185,0.4);
+    background:rgba(0,89,185,0.4) !important;
+    width:250px !important;
+    overflow:hidden !important;
+    color: #FFFFFF !important;
+    z-index:1000;
+    -webkit-box-shadow: 5px 0px 5px rgba(0,100,185,0.3);
+    box-shadow: 5px 0px 5px rgba(0,90,185,0.4);
 }
 .dash-segment{
-	width:100% !important;
-	min-height:10px !important;
-	height:auto !important;
-	clear:both;
+    width:100% !important;
+    min-height:10px !important;
+    height:auto !important;
+    clear:both;
 }
 .dash-segment h2,
 .dash-segment a{
-	color: #AAAAAA !important;
-	font-weight: bold !important;
-	-webkit-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	transition: all 0.2s ease 0s;
+    color: #AAAAAA !important;
+    font-weight: bold !important;
+    -webkit-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 .dash-segment h2:hover,
 .dash-segment a:hover{
-	color: #CECECE !important;
-	text-shadow: 0px 0px 1px #EEEEEE;
+    color: #CECECE !important;
+    text-shadow: 0px 0px 1px #EEEEEE;
 }
 .dash-segment h2{font-size: 1.4em !important;}
 #relationship_container{
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 p#about_me, #dash-stats, #dash-friends, #dash-fans{
-	max-height:15px !important;
-	overflow:hidden !important;
-	padding: 5px;
-	border-radius:5px;
-	-webkit-border-radius: 5px;
-	-webkit-border-radius:5px;
-	transition:max-height 0.5s ease-in;
-	-o-transition:max-height 0.5s ease-in;
-	-webkit-transition:max-height 0.5s ease-in;
-	-webkit-transition:max-height 0.5s ease-in;
-	-ms-transition:max-height 0.5s ease-in;
+    max-height:15px !important;
+    overflow:hidden !important;
+    padding: 5px;
+    border-radius:5px;
+    -webkit-border-radius: 5px;
+    -webkit-border-radius:5px;
+    transition:max-height 0.5s ease-in;
+    -o-transition:max-height 0.5s ease-in;
+    -webkit-transition:max-height 0.5s ease-in;
+    -webkit-transition:max-height 0.5s ease-in;
+    -ms-transition:max-height 0.5s ease-in;
 }
 p#about_me:hover, #dash-stats:hover, #dash-friends:hover, #dash-fans:hover{
-	max-height:300px !important;
-	background:rgba(0,0,0,0.5) !important;
+    max-height:300px !important;
+    background:rgba(0,0,0,0.5) !important;
 }
 .segment-content{
-	padding-top:5px !important;
-	padding-bottom:5px !important;
+    padding-top:5px !important;
+    padding-bottom:5px !important;
 }
 #dash-profile{margin-top:10px;}
 .profile-pic {
-	height: 100px;
-	width: 100px;
+    height: 100px;
+    width: 100px;
 }
 .show_all_friends{
-	text-align:center;
-	font-size:11px !important;
+    text-align:center;
+    font-size:11px !important;
 }
 #dash-stats h3{margin-top:0px !important;}
 #karma{
-	font-size:30px !important;
-	color: #fff !important;
-	text-shadow: rgba(255,222,0,0.8) 0px 0px 5px !important;
+    font-size:30px !important;
+    color: #fff !important;
+    text-shadow: rgba(255,222,0,0.8) 0px 0px 5px !important;
 }
 .award_bar{
-	width:200px !important;
-	padding:0 !important;
-	margin-top: 0px !important;
+    width:200px !important;
+    padding:0 !important;
+    margin-top: 0px !important;
 }
 .award_bar div{
-	padding:0 !important;
-	margin:0 !important;
+    padding:0 !important;
+    margin:0 !important;
 }
 #dash-stats .award_bar img {
-	transform: scale(0.5);
-	-o-transform: scale(0.5);
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	-ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
 }
 #dash-stats .award_bar div{width:20px !important;}
 .friend_holder {margin-top:0px;}
 .friend_holder table{
-	margin-top:0px;
-	margin-left:auto;
-	margin-right:auto;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .friend_holder td{
-	padding:0px 1px !important;
-	margin:0px !important;
+    padding:0px 1px !important;
+    margin:0px !important;
 }
 .friend_holder .user_link,
 .friend_holder .user_link:hover{padding:0px !important;}
-#private_plurk, 
+#private_plurk,
 #friend_managment,
 #fan_managment{
-	margin-top:12px !important;
-	height:0px !important;
+    margin-top:12px !important;
+    height:0px !important;
 }
 a.friend_man{
-	border:0 !important;
-	color:#fff !important;
-	font-size:11px !important;
-	background-color:black!important;
+    border:0 !important;
+    color:#fff !important;
+    font-size:11px !important;
+    background-color:black!important;
 }
 a.friend_man:hover{color:#111 !important;}
-
-/*頁腳*/
+/* 頁腳 */
 #footer{
-	margin: 0px 20px !important;
-	max-width: none !important;
-	height: 0px !important;
+    margin: 0px 20px !important;
+    max-width: none !important;
+    height: 0px !important;
 }
-
 #footer ul{
-	/*margin: 0px !important;*/
+    /*margin: 0px !important;*/
         position:fixed;
         right: 10px !important;
-	margin-top: -115px !important;
+    margin-top: -115px !important;
         margin-right:0px !important;
-	padding-top: 20px !important;
+    padding-top: 20px !important;
         padding-bottom: 15px !important;
         padding-right: 15px !important;
-	background-color: rgba(125,175,255,0.6);
-	color: #eeeeee !important;
-	border-radius: 10px !important;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
+    background-color: rgba(125,175,255,0.6);
+    color: #eeeeee !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
 }
-
 #footer ul:hover{
         max-width: 640px !important;
         font-size: 14.5px !important;
-	background-color: rgba(20,100,255,0.8);
+    background-color: rgba(20,100,255,0.8);
         margin-top: -165px !important;
 }
-
 #languge_selector {
         position:fixed !important;
         left:auto !important;
         top:auto !important;
         max-width:300px !important;
-	margin: 0px !important;
-	margin-top: -115px !important;
-	padding:20px 20px 20px 20px !important;
-	background-color: rgba(125,175,255,0.6);
-	color: #eeeeee !important;
-	border-radius: 10px !important;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
+    margin: 0px !important;
+    margin-top: -115px !important;
+    padding:20px 20px 20px 20px !important;
+    background-color: rgba(125,175,255,0.6);
+    color: #eeeeee !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
 }
-
-
 #languge_selector:hover{
         margin-top: -160px !important;
         font-size: 15px;
-	background-color: rgba(20,100,255,0.8);
+    background-color: rgba(20,100,255,0.8);
 }
-
 #footer a {
-	color: #eeeeee !important;
-	text-shadow: 1px 1px 1px #333333;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
+    color: #eeeeee !important;
+    text-shadow: 1px 1px 1px #333333;
+    transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
 }
 #footer a:hover {color: #aaaaaa !important;}
-
-/*視窗(GB_Window)*/
-
+/* 視窗 (GB_Window)*/
 .GB_Window .header {
-	color: black !important;
-	border:	0px solid black	!important;
+    color: black !important;
+    border:	0px solid black	!important;
 }
 .GB_Window,
 .GB_Window .header,
 .GB_Window .content {
-	border: none !important;  
-	background: none;
-	max-height: 90% !important;
-	overflow-y: auto !important;
-	overflow-x: hidden !important;
+    border: none !important;
+    background: none;
+    max-height: 90% !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
 }
 .GB_Window{position: fixed !important;}
 .GB_Window .theme {
-	border: none;   
-	background: none;
+    border: none;
+    background: none;
 }
 .GB_Window {
-	background: rgba(0, 153, 255, .7);
-	box-shadow: 0px 0px 9px rgba(0, 153, 255, .66);
-	-webkit-box-shadow: 0px 0px 9px rgba(0, 153, 255, .66);
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	z-index:  2048;
+    background: rgba(0, 153, 255, .7);
+    box-shadow: 0px 0px 9px rgba(0, 153, 255, .66);
+    -webkit-box-shadow: 0px 0px 9px rgba(0, 153, 255, .66);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index:  2048;
 }
 .GB_Window .iframe_holder,
 .GB_Window iframe {
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-webkit-border-radius: 5px;      
-	background: none;
-	border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: none;
+    border: none;
 }
 .GB_Window .header .caption {
-	background: none !important;
-	font-family: "LiHei Pro", "文泉驛微米黑", "微軟正黑體", Arial, Helvetica, sans-serif !important;
+    background: none !important;
+    font-family: "LiHei Pro", " 文泉驛微米黑 ", " 微軟正黑體 ", Arial, Helvetica, sans-serif !important;
 }
 .GB_Window .header .close {
-	width: 0 !important;
-	max-width: 0 !important;
-	height: 0 !important;
-	max-height: 0 !important;
-	opacity: 0 !important;
-	margin: 0 !important;
-	padding: 0 !important;
-	overflow: hidden;
+    width: 0 !important;
+    max-width: 0 !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
 }
-
-/*噗浪單頁*/
+/* 噗浪單頁 */
 div.bigplurk h1.content {
-	-webkit-border-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	-webkit-box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
-	-moz-box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
-	box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
+    -webkit-border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
+    box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
 }
 div.bigplurk div.time {
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	-webkit-border-radius:5px;
-	box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-radius:5px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
 }
 article.bigplurk.cboxAnchor {
-	position: relative !important;
-	top: -30px;
+    position: relative !important;
+    top: -30px;
 }
 #plurk_nav {
-	position: absolute !important;
-	top: 20px;
-	width: 98%;
+    position: absolute !important;
+    top: 20px;
+    width: 98%;
 }
 #plurk_nav a {
-	color: black;
-	border: 1px solid #AAAAAA;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+    color: black;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
 }
 #plurk_nav a:hover {
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
 #plurker_info,
 #plurk_responses {
-	position: relative !important;
-	top: -500px;
+    position: relative !important;
+    top: -500px;
 }
 #plurk_responses h2 {
-	text-shadow: 0px 0px 3px black;
-	font-weight: bold;
-	color: #EEEEEE !important;
-	background: none !important;
+    text-shadow: 0px 0px 3px black;
+    font-weight: bold;
+    color: #EEEEEE !important;
+    background: none !important;
 }
 #plurk_responses ul.responses {
-	border: none !important;
-	background: none !important;
-	padding: 0px !important;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    border: none !important;
+    background: none !important;
+    padding: 0px !important;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
 #plurk_responses,
 #plurk_responses .feed-link a {
-	background: none !important;
+    background: none !important;
 }
 /* 噗浪單頁回覆表單 */
 #reply #reply_box,
 #reply #reply_box_holder {
-	background:rgba(0,0,0,0.7) !important;
-	border: none !important;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    background:rgba(0,0,0,0.7) !important;
+    border: none !important;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
 #reply #reply_box .qual_holder {
-	color: #EEEEEE !important;
-	text-shadow: 0px 0px 3px black;
-	font-weight: bold;
+    color: #EEEEEE !important;
+    text-shadow: 0px 0px 3px black;
+    font-weight: bold;
 }
-
-/*隱藏一些東西(ninja)*/
+/* 隱藏一些東西 (ninja)*/
 #logo *,
 .permalink img#creature,
 #dash-stats .link_arrow,
@@ -815,16 +777,15 @@ article.bigplurk.cboxAnchor {
 #plurk_responses h2 a,
 .adsense,
 #resp_banner_ads,
-.show,
 .dash-icon,
 #top_header
 {
-	position: fixed !important;
-	top: -10000px !important; 
-	left: -10000px !important; 
-	width: 0px !important; 
-	height: 0px !important;
-	border: none !important;
-	opacity: 0 !important;
-	overflow: hidden !important; 
+    position: fixed !important;
+    top: -10000px !important;
+    left: -10000px !important;
+    width: 0px !important;
+    height: 0px !important;
+    border: none !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
 }
