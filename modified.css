@@ -833,7 +833,8 @@ article.bigplurk.cboxAnchor {
 .adsense,
 #resp_banner_ads,
 .dash-icon,
-#top_header
+#top_header,
+a.item.front[href*=mall]
 {
     position: fixed !important;
     top: -10000px !important; 
